@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    transition: all 0.2s ease;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-bar{
+    width: 100vw;
+    height: 30vh;
+    background: url('./images/pattern-bg-desktop.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-top: 2%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    color: white;
+    font-weight: 500;
+}
+
+.input{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2%;
+}
+
+input{
+    padding: 3%;
+    width: 450px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+
+}
+
+input::placeholder{
+    color: hsl(0, 0%, 48%);
+}
+
+button{
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    padding: 3%;
+    padding-top: 3.5%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 50px;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 17%);
+}
+
+.details{
+    width: 80vw;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 22vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 150px;
+    box-shadow:0px 0px 20px 11px rgba(0,0,0,0.05);
+    z-index: 500;
+}
+
+.hl{
+    width: 0.05%;
+    background-color: hsl(0, 0%, 80%);
+    height: 50%;
+}
+
+.details section{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 65%;
+}
+
+h2{
+    color: hsl(0, 0%, 48%);
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.details p{
+    color: hsl(0, 0%, 17%);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+#map { height: 70vh; width: 100vw;}
+
+.cc{
+    position: absolute;
+    top: 52%;
+    z-index: 500;
+}
+
+@media only screen and (max-width:550px) {
+
+    body,html{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .top-bar{
+        background-image: url('./images/pattern-bg-mobile.png');
+    }
+
+    .input{
+        width: 90vw;
+        height: 50px;
+        margin-top: 7%;
+    }
+
+    h1{
+        margin-top: 5%;
+        font-size: 1.3rem;
+    }
+
+    input{
+        font-size: 0.8rem;
+        width: 85%;
+    }
+    button{
+        width: 15%;
+    }
+
+    .details{
+        width: 90vw;
+        height: 200px;
+        top: 30vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        top: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .details section{
+        width: 100%;
+    }
+
+    .details h2{
+        font-size: 0.65rem;
+        margin-top: 5%;
+    }
+
+    .details p{
+        margin-top: 2%;
+        font-size: 1rem;
+    }
+
+    .cc{
+        top: 70%;
+    }
+    
+}
