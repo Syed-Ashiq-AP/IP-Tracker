@@ -22,7 +22,7 @@ function get_ip(){
 }
 
 var map = L.map('map',{trackResize:false,doubleClickZoom:false,boxZoom:false,zoomControl:false,dragging:false,scrollWheelZoom:false});
-L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=480b51b9-368d-47d7-b272-20a3b41da245', {
     maxZoom: 20
 }).addTo(map);
 let tf ={
